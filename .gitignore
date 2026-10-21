@@ -8,3 +8,6 @@
 !/research/
 !/assets/
 .DS_Store
+
+# CV hidden from the public site for now (kept locally).
+/assets/cv/
