@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siva Varupala</title>
+  <meta name="description" content="Siva Varupala is a PhD student in Industrial and Systems Engineering at Wayne State University working on CAD-based disassembly planning and robotic disassembly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css?v=3" />
+</head>
+<body>
+  <main class="page">
+
+    <header class="intro">
+      <div>
+        <h1>Siva Varupala</h1>
+        <p>Siva Varupala is a PhD student in Industrial and Systems Engineering at Wayne State University, advised by Dr. Jeremy Rickli. His research teaches machines to understand how products come apart, turning CAD geometry into knowledge that planners and robots can use for disassembly and remanufacturing.</p>
+        <p>Before Wayne State, he received an M.Tech in Manufacturing Engineering from NIT Andhra Pradesh and a B.Tech in Mechanical Engineering from GMR Institute of Technology, and worked as a Junior Research Fellow at NIT Puducherry on automated assembly planning.</p>
+        <p>His work has appeared in <i>Computers in Industry</i>, <i>Assembly Automation</i> and ASME IDETC, and he has a patent application on automated assembly planning. His team won first place in the inaugural Intrinsic AI for Industry Challenge.</p>
+        <div class="links">
+          <a href="mailto:varupalaprasad@gmail.com">Email</a>
+          <a href="assets/cv/Varupala_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="https://scholar.google.com/citations?user=gaBYi3kAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/prasadvarupala/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/sivavarupala" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://orcid.org/0000-0002-7082-4203" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+      <img class="photo" src="assets/img/portrait.jpg" alt="Siva Varupala in the robotics lab" width="680" height="850" />
+    </header>
+
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">Sep 2026</span><span>Our team, Team FLEX, won first place in the inaugural <a href="https://www.intrinsic.ai/blog/posts/ai-for-industry-challenge" target="_blank" rel="noopener">Intrinsic AI for Industry Challenge</a>.</span></li>
+        <li><span class="date">2026</span><span>Our paper on predicting disassembly interference with 3D CNNs was accepted at IWAR 2026.</span></li>
+        <li><span class="date">Aug 2025</span><span>Presented our graph neural network paper at ASME IDETC/CIE 2025 in Anaheim.</span></li>
+        <li><span class="date">Jun 2025</span><span>Passed the PhD preliminary examinations.</span></li>
+        <li><span class="date">Aug 2024</span><span>Started my PhD at Wayne State University.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research</h2>
+      <p>I study disassembly planning: given a product's CAD model, which part can move, in which direction, and in what order. My earlier work developed geometric feasibility tests for assembly and disassembly, including directions beyond the six principal axes. My PhD work learns these interference relations directly from geometry with graph neural networks and 3D convolutional networks, and connects them to robots in a physical workcell.</p>
+
+      <video class="hero-video" src="assets/video/hero.mp4" poster="assets/video/hero.jpg" autoplay muted loop playsinline preload="metadata" width="1200" height="600" aria-label="Animation of a 16-part transmission assembly being disassembled part by part along its shaft axis"></video>
+      <p class="caption">A 16-part transmission assembly from our assembly-planning studies. It comes apart in the order of the published 7-level sequence, with each highlighted part leaving along the shaft axis in one of only two directions. In the published method (<a href="research/oblique-assembly-planning.html">summary</a>), this product was planned in 7 assembly levels using 2 directions, compared with 15 levels and 6 directions for earlier principal-axis methods.</p>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <p class="caption" style="margin-top:-4px">Each animation is planned from the CAD geometry: interference matrices are computed for six directions and a disassembly sequence is searched on them. For the transmission and the tractor force outlet the order follows the sequences published in our 2022 paper, and the holder's last two parts leave along its published 45° oblique direction. Parts that no principal direction can free stay together. The assemblies come from my assembly-planning research and illustrate each topic; they are not results from the individual papers.</p>
+
+      <p class="subhead">Conference papers</p>
+      <ul class="pubs">
+        <li class="pub"><video class="thumb" src="assets/video/iwar26.mp4" poster="assets/video/iwar26.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">Predicting disassembly interference matrices from CAD geometry using SDF volumes and CNNs</span>
+          <span class="authors"><b>S. S. V. P. Varupala</b>, S. Tinoco-Leon, J. L. Rickli</span>
+          <span class="venue">IWAR 2026, Springer LNCS (accepted)</span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/idetc25.mp4" poster="assets/video/idetc25.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">Graph neural networks for interference matrix prediction in generative design for disassembly</span>
+          <span class="authors"><b>S. S. V. P. Varupala</b>*, J. P. J. Prioli*, J. L. Rickli <span class="muted">(*equal contribution)</span></span>
+          <span class="venue">ASME IDETC/CIE 2025, DETC2025-168593</span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/dfa22.mp4" poster="assets/video/dfa22.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A design for assembly framework based on subassembly detection method</span>
+          <span class="authors"><b>S. S. V. P. Varupala</b> et al.</span>
+          <span class="venue">Recent Advances in Manufacturing Modelling and Optimization, Springer, 2022<a href="https://doi.org/10.1007/978-981-16-9952-8_43" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/exploded21.mp4" poster="assets/video/exploded21.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">An efficient geometrical feasibility testing method for exploded view generation to perform assembly sequence planning</span>
+          <span class="authors"><b>S. S. V. P. Varupala</b>, A. K. Gulivindala, M. V. A. R. Bahubalendruni</span>
+          <span class="venue">Current Advances in Mechanical Engineering, Springer, 2021<a href="https://doi.org/10.1007/978-981-33-4795-3_89" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+      </ul>
+
+      <p class="subhead">Journal articles</p>
+      <ul class="pubs">
+        <li class="pub"><video class="thumb" src="assets/video/csppa22.mp4" poster="assets/video/csppa22.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A novel computative strategic planning projections algorithm (CSPPA) to generate oblique directional interference matrix for different applications in computer-aided design</span>
+          <span class="authors"><b>S. S. V. P. Varupala</b>, M. Hymavathi, C. S. P. Rao, M. V. A. R. Bahubalendruni</span>
+          <span class="venue"><i>Computers in Industry</i>, 141, 103703, 2022<a href="https://doi.org/10.1016/j.compind.2022.103703" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/estij22.mp4" poster="assets/video/estij22.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A novel geometric feasibility method to perform assembly sequence planning through oblique orientations</span>
+          <span class="authors">G. A. Kumar, M. V. A. R. Bahubalendruni, <b>S. S. V. P. Varupala</b>, D. Ashok, K. Sankaranarayanasamy</span>
+          <span class="venue"><i>Engineering Science and Technology, an International Journal</i>, 26, 100994, 2022<a href="https://doi.org/10.1016/j.jestch.2021.04.013" target="_blank" rel="noopener">[DOI]</a><a href="research/oblique-assembly-planning.html">[Summary]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/nasl21.mp4" poster="assets/video/nasl21.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">Disassembly sequence planning for safe disposal of end-of-life waste electric and electronic equipment</span>
+          <span class="authors">M. V. A. R. Bahubalendruni, <b>S. S. V. P. Varupala</b></span>
+          <span class="venue"><i>National Academy Science Letters</i>, 44(3), 243–247, 2021<a href="https://doi.org/10.1007/s40009-020-00994-0" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/cutset21.mp4" poster="assets/video/cutset21.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A modified cut-set method for mechanical subassembly identification</span>
+          <span class="authors">A. K. Gulivindala, M. V. A. R. Bahubalendruni, A. K. Inkulu, <b>S. S. V. P. Varupala</b>, K. Sankaranarayanasamy</span>
+          <span class="venue"><i>Assembly Automation</i>, 2021<a href="https://doi.org/10.1108/AA-05-2021-0057" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/multilayer21.mp4" poster="assets/video/multilayer21.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A multi-layered disassembly sequence planning method to support decision making in de-manufacturing</span>
+          <span class="authors">G. A. Kumar, M. V. A. R. Bahubalendruni, <b>S. S. V. P. Varupala</b>, K. Sankaranarayanasamy</span>
+          <span class="venue"><i>Sādhanā</i>, 46(2), 2021<a href="https://doi.org/10.1007/s12046-021-01622-3" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/heuristic20.mp4" poster="assets/video/heuristic20.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">A heuristic method with a novel stability concept to perform parallel assembly sequence planning by subassembly detection</span>
+          <span class="authors">A. K. Gulivindala, M. V. A. R. Bahubalendruni, <b>S. S. V. P. Varupala</b>, K. Sankaranarayanasamy</span>
+          <span class="venue"><i>Assembly Automation</i>, 2020<a href="https://doi.org/10.1108/AA-01-2020-0017" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+        <li class="pub"><video class="thumb" src="assets/video/sadhana19.mp4" poster="assets/video/sadhana19.jpg" autoplay muted loop playsinline preload="metadata" width="480" height="360" aria-hidden="true"></video><div><span class="title">Optimal assembly sequence generation through computational approach</span>
+          <span class="authors">M. V. A. R. Bahubalendruni, A. K. Gulivindala, <b>S. S. V. P. Varupala</b>, D. K. Palavalasa</span>
+          <span class="venue"><i>Sādhanā</i>, 44(8), 2019<a href="https://doi.org/10.1007/s12046-019-1157-2" target="_blank" rel="noopener">[DOI]</a></span></div></li>
+      </ul>
+
+      <p class="subhead">Patent</p>
+      <ul class="pubs">
+        <li><span class="title">Smart system and method for automatic exploded view generation and assembly sequence plan optimization</span>
+          <span class="venue">Patent application filed, India</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching</h2>
+      <ul class="plain">
+        <li>Graduate Teaching Assistant, Industrial and Systems Engineering, Wayne State University (2024–present): Industrial Engineering &amp; Systems Thinking, Integrated Product Development, Production &amp; Service Systems, Systems Engineering Capstone, Lean Six Sigma Capstone, Engineering Risk &amp; Decision Analysis, Project Management</li>
+        <li>Lab Assistant, Hydraulics and Pneumatics, NIT Andhra Pradesh (2021)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Service</h2>
+      <ul class="plain">
+        <li>Outreach: robotics demonstrations for middle- and high-school students</li>
+      </ul>
+    </section>
+
+    <footer>Last updated October 2026</footer>
+  </main>
+
+  <script>
+    // Respect reduced-motion preferences: show the poster frame instead of looping.
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach((v) => { v.removeAttribute("autoplay"); v.pause(); });
+    }
+  </script>
+</body>
+</html>

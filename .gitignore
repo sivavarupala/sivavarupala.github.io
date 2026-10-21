@@ -1,0 +1,10 @@
+# Allowlist: only the public website is tracked.
+# Vault/, _cv/, _archive/, images/, CLAUDE.md and personal files stay local.
+/*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/research/
+!/assets/
+.DS_Store
